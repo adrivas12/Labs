@@ -42,7 +42,8 @@ class Mixer
         System.out.println( arr[i] + " ");
         }
     }
-
+}
+class q3{
     public static void main(String[] args)
     {
         Scanner sc1 = new Scanner(System.in);
