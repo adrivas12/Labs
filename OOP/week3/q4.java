@@ -44,19 +44,36 @@ class Stack
             System.out.println(arr[i] + ", ");
         }
     }
-    
+}
+
+class q4{
     public static void main(String[] args)
     {
-        Stack stack = new Stack(5);
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        Scanner sc = new Scanner(System.in);
+        Stack stack = new Stack();
+        stack.intialize(10);
+        int choice;
+        int temp;
 
-        System.out.println("Stack: ");
-        stack.display();
-
-        stack.pop();
-        System.out.println("After popping out ");
-        stack.display();
-    }
-}
+        do
+        {
+            System.out.println("Enter the choice: 1. push 2. pop");
+            choice = sc.nextInt();
+            switch(choice)
+            {
+                case 1:
+                System.out.println("Enter the element to push");
+                temp = sc.nextInt();
+                stack.push(temp);
+                stack.display();
+                break;
+                case 2:
+                int temp1 = stack.pop();
+                System.out.println("The popped element is: " + temp1);
+                stack.display();
+                break;
+            }
+            System.out.println("1. continue 2.Exit");
+            choice = sc.nextInt();
+        } while(choice!=2);
+}}
