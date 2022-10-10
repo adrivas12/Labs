@@ -78,12 +78,24 @@ class q2
 		System.out.printf("Enter stories of Building: ");
 		int stories1 = sc.nextInt();
 		b1.setstories(stories1);
+		System.out.println("\n\nHouse\nEnter the square footage of house: ");
+		double sqf2=sc.nextDouble();
+		h1.setsqf(sqf2);
+		System.out.println("Enter the number of stories in the house: ");
+		int stories2=sc.nextInt();
+		h1.setstories(stories2);
 		System.out.println("Enter number of bedrooms in House: ");
 		int bed1 = sc.nextInt();
 		h1.setbed(bed1);
 		System.out.println("Enter number of baths in House: ");
 		int bath1 = sc.nextInt();
 		h1.setbath(bath1);
+		System.out.println("\n\nSchool\nEnter the square footage of the school");
+		double sqf3=sc.nextDouble();
+		s1.setsqf(sqf3);
+		System.out.println("Enter the stories of school");
+		int stories3=sc.nextInt();
+		s1.setstories(stories3);
 		System.out.println("Enter the number of classrooms in School: ");
 		int classrooms1 = sc.nextInt();
 		s1.setclassrooms(classrooms1);
@@ -92,8 +104,12 @@ class q2
 		s1.setgrade(grade1);
 		System.out.println("\n\nSquare footage of Building: " + b1.getsqf() +
 							"\nNumber of stories of Building: " + b1.getstories()+
+							 "\n\nSquare footage of House: " + h1.getsqf() +
+						         "\nNumber of stories of House: " + h1.getstories() +
 							"\nNumber of Bedrooms in House: " + h1.getbed()+
 							"\nNumber of Bathrooms in House: " + h1.getbath()+
+							 "\n\nSquare footage of School: " + s1.getsqf() +
+                           				 "\nNumber of stories of School: " + s1.getstories() +
 							"\nNumber of Classrooms in School: " + s1.getclassrooms()+
 							"\nGrade level of school: " + s1.getgrade());
 	}
